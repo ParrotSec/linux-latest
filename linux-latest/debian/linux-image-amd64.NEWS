@@ -1,0 +1,13 @@
+linux-latest (47) unstable; urgency=medium
+
+  * The kernel image is now compressed using xz compression.  If you are
+    running it under a virtualisation system such as Xen, that will
+    decompress the kernel itself, then you will need to ensure that the
+    system is up to date and includes support for such kernels.
+  
+    The Xen system included in Debian 7 'wheezy' does support this.
+
+    See https://wiki.debian.org/Xen#Error_.22unknown_compression_format.22
+    for more information.
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Thu, 14 Aug 2014 02:20:57 +0100

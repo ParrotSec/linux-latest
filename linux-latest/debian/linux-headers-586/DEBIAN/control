@@ -1,0 +1,11 @@
+Package: linux-headers-586
+Source: linux-latest (73+parrot1)
+Version: 4.5+73+parrot1
+Architecture: i386
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 11
+Depends: linux-headers-686
+Section: oldlibs
+Priority: optional
+Description: Header files for Linux 586 configuration (dummy package)
+ This is a dummy transitional package.  It can be safely removed.

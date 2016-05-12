@@ -1,0 +1,52 @@
+SHELL  := bash -e
+ifdef ARCH
+override DEB_HOST_ARCH     := $(shell dpkg-architecture -a'$(ARCH)' -f -qDEB_HOST_ARCH)
+override DEB_HOST_GNU_TYPE := $(shell dpkg-architecture -a'$(ARCH)' -f -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_ARCH    := $(shell dpkg-architecture -a'$(ARCH)' -qDEB_BUILD_ARCH)
+endif
+
+export DH_OPTIONS
+export DEB_HOST_ARCH
+
+include debian/rules.defs
+
+binary-indep: install-doc
+binary-indep: install-source
+binary-indep: install-perf
+
+install-base:
+	dh_bugfiles
+	dh_installdebconf
+	dh_installchangelogs
+	dh_installdocs
+	dh_lintian
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol -- $(GENCONTROL_ARGS)
+	dh_md5sums
+	dh_builddeb
+
+install-dummy:
+	dh_testdir
+	dh_testroot
+	dh_prep
+	$(MAKE) -f debian/rules.real install-base
+
+install-doc: PACKAGE_NAME = linux-doc
+install-doc: DH_OPTIONS = -p$(PACKAGE_NAME)
+install-doc:
+	dh_prep
+	$(MAKE) -f debian/rules.real install-base
+
+install-source: PACKAGE_NAME = linux-source
+install-source: DH_OPTIONS = -p$(PACKAGE_NAME)
+install-source:
+	dh_prep
+	$(MAKE) -f debian/rules.real install-base
+
+install-perf: PACKAGE_NAME = linux-perf
+install-perf: DH_OPTIONS = -p$(PACKAGE_NAME)
+install-perf:
+	dh_prep
+	$(MAKE) -f debian/rules.real install-base

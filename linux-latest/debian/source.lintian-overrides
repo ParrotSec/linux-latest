@@ -1,0 +1,4 @@
+linux-latest source: dbg-package-missing-depends linux-image-amd64-dbg
+linux-latest source: dbg-package-missing-depends linux-image-arm64-dbg
+linux-latest source: dbg-package-missing-depends linux-image-686-pae-dbg
+linux-latest source: dbg-package-missing-depends linux-image-s390x-dbg

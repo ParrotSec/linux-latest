@@ -1,0 +1,13 @@
+Package: linux-image-686-pae-dbg
+Source: linux-latest (73+parrot1)
+Version: 4.5+73+parrot1
+Architecture: i386
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 14
+Depends: linux-image-4.5.0-parrot-686-pae-dbg
+Provides: linux-latest-image-dbg
+Section: kernel
+Priority: optional
+Description: Debugging symbols for Linux 686-pae configuration (meta-package)
+ This package depends on the detached debugging symbols for the latest
+ Linux kernel 686-pae configuration.
