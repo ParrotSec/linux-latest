@@ -1,14 +1,20 @@
-linux-latest (73+parrot1) testing; urgency=medium
+linux-latest (74+parrot1) testing; urgency=medium
 
-  * Update for linux 4.5.3-2parrot0
+  * Fix namespaces
 
- -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Thu, 12 May 2016 23:20:15 +0200
+ -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Fri, 01 Jul 2016 16:24:59 +0200
 
-linux-latest (73+parrot0) testing; urgency=medium
+linux-latest (74+parrot0) testing; urgency=medium
 
-  * Update to 4.5.0-2parrot0
+  * Update to linux 4.6.0-parrot
 
- -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Thu, 12 May 2016 01:00:46 +0200
+ -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Fri, 01 Jul 2016 16:10:39 +0200
+
+linux-latest (74) unstable; urgency=medium
+
+  * Update to 4.6.0-1
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 07 Jun 2016 00:00:58 +0100
 
 linux-latest (73) unstable; urgency=medium
 
