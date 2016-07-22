@@ -4,7 +4,7 @@ Binary: linux-source, linux-doc, linux-perf, linux-image-alpha-generic, linux-he
  linux-headers-octeon, linux-image-loongson-2e, linux-headers-loongson-2e, linux-image-loongson-2f, linux-headers-loongson-2f, linux-image-loongson-3, linux-headers-loongson-3, linux-image-powerpc, linux-headers-powerpc, linux-image-powerpc-smp, linux-headers-powerpc-smp, linux-image-powerpc64, linux-headers-powerpc64, linux-image-powerpcspe, linux-headers-powerpcspe, linux-image-powerpc64le, linux-headers-powerpc64le, linux-image-s390x, linux-headers-s390x, linux-image-s390x-dbg, linux-image-sh7751r, linux-headers-sh7751r, linux-image-sh7785lcr, linux-headers-sh7785lcr, linux-image-sparc64, linux-headers-sparc64, linux-image-sparc64-smp, linux-headers-sparc64-smp, linux-tools, linux-image-586, linux-headers-586, linux-image-kirkwood, linux-headers-kirkwood, linux-image-orion5x,
  linux-headers-orion5x
 Architecture: all alpha amd64 arm64 armel armhf hppa i386 m68k mips mipsel mips64 mips64el powerpc ppc64 powerpcspe ppc64el s390x sh4 sparc64
-Version: 74+parrot1
+Version: 74+parrot2
 Maintainer: Kali Developers <devel@kali.org>
 Uploaders: Raphaël Hertzog <hertzog@debian.org>, Sophie Brun <sophie@freexian.com>
 Standards-Version: 3.9.5
@@ -92,8 +92,8 @@ Package-List:
  linux-tools deb oldlibs optional arch=all
  xen-linux-system-amd64 deb kernel optional arch=amd64
 Checksums-Sha1:
- 9215bb0767a658da42308ce55e44cfbd1638dbba 16184 linux-latest_74+parrot1.tar.xz
+ 472b5e7499278f1496674b4cc452f4f903c16960 22292 linux-latest_74+parrot2.tar.xz
 Checksums-Sha256:
- 7522f1682702ebe930db6938b42a55b997110718bde4d58d69516a970d2b3a63 16184 linux-latest_74+parrot1.tar.xz
+ 5c8f627826b817988c5bdc178e5578da9ae8561490b4c49f11a47a382cd0e883 22292 linux-latest_74+parrot2.tar.xz
 Files:
- 5d27a848f0d07616fd4ee049e976c299 16184 linux-latest_74+parrot1.tar.xz
+ 69b19fcc016a4397ba433b021f787b13 22292 linux-latest_74+parrot2.tar.xz

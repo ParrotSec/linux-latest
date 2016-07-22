@@ -1,3 +1,9 @@
+linux-latest (74+parrot2) testing; urgency=medium
+
+  * Update for linux 4.6.0-parrot
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 22 Jul 2016 19:24:35 +0200
+
 linux-latest (74+parrot1) testing; urgency=medium
 
   * Fix namespaces

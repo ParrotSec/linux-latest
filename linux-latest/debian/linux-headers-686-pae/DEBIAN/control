@@ -1,0 +1,12 @@
+Package: linux-headers-686-pae
+Source: linux-latest (74+parrot2)
+Version: 4.6+74+parrot2
+Architecture: i386
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 11
+Depends: linux-headers-4.6.0-parrot-686-pae
+Section: kernel
+Priority: optional
+Description: Header files for Linux 686-pae configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel 686-pae configuration.

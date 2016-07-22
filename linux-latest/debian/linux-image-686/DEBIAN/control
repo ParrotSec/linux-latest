@@ -1,0 +1,13 @@
+Package: linux-image-686
+Source: linux-latest (74+parrot2)
+Version: 4.6+74+parrot2
+Architecture: i386
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 14
+Depends: linux-image-4.6.0-parrot-686
+Provides: linux-latest-modules-4.6.0-parrot-686
+Section: kernel
+Priority: optional
+Description: Linux for older PCs (meta-package)
+ This package depends on the latest Linux kernel and modules for use on PCs
+ with one or more processors not supporting PAE.
