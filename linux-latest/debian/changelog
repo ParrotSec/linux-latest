@@ -1,3 +1,15 @@
+linux-latest (75+parrot1) testing; urgency=medium
+
+  * Restore rules.gen
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Oct 2016 13:22:15 +0200
+
+linux-latest (75+parrot0) testing; urgency=medium
+
+  * Update for linux 4.7.0-parrot
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Oct 2016 12:48:53 +0200
+
 linux-latest (74+parrot2) testing; urgency=medium
 
   * Update for linux 4.6.0-parrot
