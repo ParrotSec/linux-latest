@@ -1,2 +1,0 @@
-linux-image-versatile-dbg: wrong-section-according-to-package-name linux-image-versatile-dbg => debug
-linux-image-versatile-dbg: debug-package-should-be-priority-extra linux-image-versatile-dbg

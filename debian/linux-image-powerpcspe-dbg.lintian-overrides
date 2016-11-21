@@ -1,2 +1,0 @@
-linux-image-powerpcspe-dbg: wrong-section-according-to-package-name linux-image-powerpcspe-dbg => debug
-linux-image-powerpcspe-dbg: debug-package-should-be-priority-extra linux-image-powerpcspe-dbg

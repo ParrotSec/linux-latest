@@ -1,10 +1,10 @@
 Source: linux-latest
 Section: kernel
 Priority: optional
-Maintainer: Kali Developers <devel@kali.org>
-Uploaders: Raphaël Hertzog <hertzog@debian.org>, Sophie Brun <sophie@freexian.com>
-Standards-Version: 3.9.5
-Build-Depends: debhelper (>> 7), linux-support-4.7.0-parrot, linux-headers-4.7.0-parrot-all
+Maintainer: Parrot Dev Team <parrot-devel@lists.parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>> 7), linux-support-4.8.0-parrot, linux-headers-4.8.0-parrot-all
 Vcs-Browser: https://anonscm.debian.org/cgit/kernel/linux-latest.git
 Vcs-Git: https://anonscm.debian.org/git/kernel/linux-latest.git
 
