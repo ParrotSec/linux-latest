@@ -1,1 +1,1 @@
-linux-latest source: dbg-package-missing-depends linux-image-@flavour@-dbg
+linux-latest source: dbg-package-missing-depends linux-image-@flavour@-dbgsym

@@ -50,3 +50,11 @@ install-perf: DH_OPTIONS = -p$(PACKAGE_NAME)
 install-perf:
 	dh_prep
 	$(MAKE) -f debian/rules.real install-base
+
+install-flavour:
+	dh_testdir
+	dh_testroot
+	$(MAKE) -f debian/rules.real install-base DH_OPTIONS='-plinux-image$(LOCALVERSION) -plinux-headers$(LOCALVERSION)'
+ifeq ($(DEBUG),True)
+	$(MAKE) -f debian/rules.real install-base DH_OPTIONS='-plinux-image$(LOCALVERSION)-dbgsym' GENCONTROL_ARGS='$(GENCONTROL_ARGS) -DAuto-Built-Package=debug-symbols'
+endif

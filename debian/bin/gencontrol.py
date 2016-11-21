@@ -75,14 +75,13 @@ class Gencontrol(Base):
                              'utf-8') as f:
                 f.write(self.substitute(self.templates[template], vars))
         templates.extend(self.templates["control.image.latest.type-standalone"])
-        if self.config.get_merge('build', arch, featureset, flavour,
-                                 'modules', True):
-            templates.extend(self.templates["control.headers.latest"])
+        templates.extend(self.templates["control.headers.latest"])
         if self.config.get_merge('build', arch, featureset, flavour,
                                  'debug-info', False):
+            makeflags['DEBUG'] = True
             templates.extend(self.templates["control.image-dbg.latest"])
             substitute_file('lintian-overrides.image-dbg',
-                            'debian/linux-image-%s-dbg.lintian-overrides' %
+                            'debian/linux-image-%s-dbgsym.lintian-overrides' %
                             vars['flavour'])
             substitute_file('lintian-overrides.source',
                             'debian/source.lintian-overrides',
@@ -103,12 +102,12 @@ class Gencontrol(Base):
             if self.config.merge('xen', arch, featureset, flavour):
                 templates.extend(self.templates["control.xen-linux-system.latest"])
 
-        packages_dummy = []
+        packages_flavour = []
 
-        packages_dummy.append(self.process_real_image(templates[0], image_fields, vars))
-        packages_dummy.extend(self.process_packages(templates[1:], vars))
+        packages_flavour.append(self.process_real_image(templates[0], image_fields, vars))
+        packages_flavour.extend(self.process_packages(templates[1:], vars))
 
-        for package in packages_dummy:
+        for package in packages_flavour:
             name = package['Package']
             if name in packages:
                 package = packages.get(name)
@@ -120,16 +119,17 @@ class Gencontrol(Base):
         makeflags['GENCONTROL_ARGS'] = '-v%s' % self.package_version
 
         cmds_binary_arch = []
-        for i in packages_dummy:
+        for i in packages_flavour:
             cmds_binary_arch += self.get_link_commands(i, ['NEWS'])
-        cmds_binary_arch += ["$(MAKE) -f debian/rules.real install-dummy DH_OPTIONS='%s' %s" % (' '.join(["-p%s" % i['Package'] for i in packages_dummy]), makeflags)]
+        cmds_binary_arch += ["$(MAKE) -f debian/rules.real install-flavour %s" %
+                             makeflags]
         makefile.add('binary-arch_%s_%s_%s_real' % (arch, featureset, flavour), cmds = cmds_binary_arch)
 
         # linux-image meta-packages include a bug presubj message
         # directing reporters to the real image package.
         bug_presubj = self.substitute(
             self.templates["bug-presubj.image.latest"], vars)
-        codecs.open("debian/%s.bug-presubj" % packages_dummy[0]['Package'], 'w', 'utf-8').write(bug_presubj)
+        codecs.open("debian/%s.bug-presubj" % packages_flavour[0]['Package'], 'w', 'utf-8').write(bug_presubj)
 
     def do_extra(self, packages, makefile):
         templates_extra = self.templates["control.extra"]

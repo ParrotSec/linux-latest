@@ -1,0 +1,27 @@
+linux-latest (76) unstable; urgency=medium
+
+  * From Linux 4.8, several changes have been made in the kernel
+    configuration to 'harden' the system, i.e. to mitigate security bugs.
+    Some changes may cause legitimate applications to fail, and can be
+    reverted by run-time configuration:
+    - On 64-bit PCs (amd64), the old 'virtual syscall' interface is
+      disabled.  This breaks (e)glibc 2.13 and earlier.  To re-enable it,
+      set the kernel parameter: vsyscall=emulate
+    - On most architectures, the /dev/mem device can no longer be used to
+      access devices that also have a kernel driver.  This breaks dosemu
+      and some old user-space graphics drivers.  To allow this, set the
+      kernel parameter: iomem=relaxed
+    - The kernel log is no longer readable by unprivileged users.  To
+      allow this, set the sysctl: kernel.dmesg_restrict=0
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 29 Oct 2016 02:05:32 +0100
+
+linux-latest (75) unstable; urgency=medium
+
+  * From Linux 4.7, the iptables connection tracking system will no longer
+    automatically load helper modules.  If your firewall configuration
+    depends on connection tracking helpers, you should explicitly load the
+    required modules.  For more information, see
+    <https://home.regit.org/netfilter-en/secure-use-of-helpers/>.
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 29 Oct 2016 01:53:18 +0100

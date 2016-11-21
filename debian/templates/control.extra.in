@@ -1,5 +1,6 @@
 Package: linux-tools
 Section: oldlibs
+Priority: extra
 Architecture: all
 Depends: linux-perf, ${misc:Depends}
 Description: Performance analysis tools for Linux (dummy package)
@@ -7,6 +8,7 @@ Description: Performance analysis tools for Linux (dummy package)
 
 Package: linux-image-586
 Section: oldlibs
+Priority: extra
 Architecture: i386
 Depends: linux-image-686, ${misc:Depends}
 Description: Linux for older PCs (dummy package)
@@ -14,6 +16,7 @@ Description: Linux for older PCs (dummy package)
 
 Package: linux-headers-586
 Section: oldlibs
+Priority: extra
 Architecture: i386
 Depends: linux-headers-686, ${misc:Depends}
 Description: Header files for Linux 586 configuration (dummy package)
@@ -21,6 +24,7 @@ Description: Header files for Linux 586 configuration (dummy package)
 
 Package: linux-image-kirkwood
 Section: oldlibs
+Priority: extra
 Architecture: armel
 Depends: linux-image-marvell, ${misc:Depends}
 Description: Linux for Marvell Kirkwood (dummy package)
@@ -28,6 +32,7 @@ Description: Linux for Marvell Kirkwood (dummy package)
 
 Package: linux-headers-kirkwood
 Section: oldlibs
+Priority: extra
 Architecture: armel
 Depends: linux-headers-marvell, ${misc:Depends}
 Description: Header files for Linux kirkwood configuration (dummy package)
@@ -35,6 +40,7 @@ Description: Header files for Linux kirkwood configuration (dummy package)
 
 Package: linux-image-orion5x
 Section: oldlibs
+Priority: extra
 Architecture: armel
 Depends: linux-image-marvell, ${misc:Depends}
 Description: Linux for Marvell Orion (dummy package)
@@ -42,6 +48,7 @@ Description: Linux for Marvell Orion (dummy package)
 
 Package: linux-headers-orion5x
 Section: oldlibs
+Priority: extra
 Architecture: armel
 Depends: linux-headers-marvell, ${misc:Depends}
 Description: Header files for Linux orion5x configuration (dummy package)

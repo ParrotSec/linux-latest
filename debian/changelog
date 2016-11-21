@@ -1,3 +1,9 @@
+linux-latest (76+parrot0) testing; urgency=medium
+
+  * Update for linux 4.8.0-parrot
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 21 Nov 2016 09:08:16 +0100
+
 linux-latest (75+parrot3) testing; urgency=medium
 
   * Update for linux 4.8.0-parrot
@@ -586,3 +592,4 @@ linux-latest-2.6 (1) unstable; urgency=low
   * Initial release.
 
  -- Bastian Blank <waldi@debian.org>  Mon, 14 Aug 2006 20:32:24 +0200
+

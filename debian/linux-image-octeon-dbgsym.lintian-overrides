@@ -1,0 +1,2 @@
+linux-image-octeon-dbgsym: wrong-section-according-to-package-name linux-image-octeon-dbgsym => debug
+linux-image-octeon-dbgsym: debug-package-should-be-priority-extra linux-image-octeon-dbgsym
