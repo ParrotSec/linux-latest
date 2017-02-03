@@ -1,11 +1,11 @@
 b8bccc75f82aa9370ae38b09468d176a  debian/bin/gencontrol.py
-7185e0b6cca5f4dae1dcc159b6930e77  debian/changelog
+a06a3d1b93ad334f5e1f677eafe053d1  debian/changelog
 112d822bf08fd275ab6b5ee310865736  debian/templates/control.xen-linux-system.latest.in
 9eb070f27b05013d0a36a6093b64352f  debian/templates/control.image-dbg.latest.in
 8cf2ba1553c0ad410aeaf0c90a47a328  debian/templates/control.source.latest.in
 2bec21a63cd49ba2ee927d000d64c42d  debian/templates/control.headers.latest.in
 c78545990739b7f1546987497342b75d  debian/templates/control.image.latest.type-standalone.in
 214b6b89c361dd489803d9f344ad9b69  debian/templates/control.doc.latest.in
-62090e1bf7b442b22dd57772fd0ca98c  debian/templates/control.source.in
+dd0028f99fad4a454507c8387da06532  debian/templates/control.source.in
 e7facb6902b89f724343b30d5a11e792  debian/templates/control.tools.latest.in
 3e5fa5b7e538291711fc6de5b01ee76e  debian/templates/control.extra.in
