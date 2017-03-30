@@ -1,3 +1,9 @@
+linux-latest (80+parrot0) testing; urgency=medium
+
+  * Update for linux 4.9.0-parrot16 (4.9.16)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 30 Mar 2017 04:46:59 +0200
+
 linux-latest (79+parrot1) testing; urgency=medium
 
   * Update for linux 4.9.0-parrot13 (4.9.13)

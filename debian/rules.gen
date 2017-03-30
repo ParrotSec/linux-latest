@@ -6,12 +6,12 @@ binary-arch_alpha_none_alpha-generic: binary-arch_alpha_none_alpha-generic_real
 binary-arch_alpha_none_alpha-generic_real::
 	ln -sf linux-image.NEWS debian/linux-image-alpha-generic.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-alpha-generic-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='alpha' DEBUG='True' FEATURESET='none' FLAVOUR='alpha-generic' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-alpha-generic'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='alpha' DEBUG='True' FEATURESET='none' FLAVOUR='alpha-generic' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-alpha-generic'
 binary-arch_alpha_none_alpha-smp: binary-arch_alpha_none_alpha-smp_real
 binary-arch_alpha_none_alpha-smp_real::
 	ln -sf linux-image.NEWS debian/linux-image-alpha-smp.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-alpha-smp-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='alpha' DEBUG='True' FEATURESET='none' FLAVOUR='alpha-smp' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-alpha-smp'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='alpha' DEBUG='True' FEATURESET='none' FLAVOUR='alpha-smp' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-alpha-smp'
 binary-arch_alpha_none_real:
 binary-arch_alpha_real:
 binary-arch_amd64: binary-arch_amd64_none binary-arch_amd64_real binary-arch_amd64_rt
@@ -20,7 +20,7 @@ binary-arch_amd64_none_amd64: binary-arch_amd64_none_amd64_real
 binary-arch_amd64_none_amd64_real::
 	ln -sf linux-image.NEWS debian/linux-image-amd64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-amd64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='amd64' DEBUG='True' FEATURESET='none' FLAVOUR='amd64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-amd64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='amd64' DEBUG='True' FEATURESET='none' FLAVOUR='amd64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-amd64'
 binary-arch_amd64_none_real:
 binary-arch_amd64_real:
 binary-arch_amd64_rt: binary-arch_amd64_rt_amd64 binary-arch_amd64_rt_real
@@ -28,7 +28,7 @@ binary-arch_amd64_rt_amd64: binary-arch_amd64_rt_amd64_real
 binary-arch_amd64_rt_amd64_real::
 	ln -sf linux-image.NEWS debian/linux-image-rt-amd64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-rt-amd64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='amd64' DEBUG='True' FEATURESET='rt' FLAVOUR='amd64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-rt-amd64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='amd64' DEBUG='True' FEATURESET='rt' FLAVOUR='amd64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-rt-amd64'
 binary-arch_amd64_rt_real:
 binary-arch_arm64: binary-arch_arm64_none binary-arch_arm64_real
 binary-arch_arm64_none: binary-arch_arm64_none_arm64 binary-arch_arm64_none_real
@@ -36,21 +36,21 @@ binary-arch_arm64_none_arm64: binary-arch_arm64_none_arm64_real
 binary-arch_arm64_none_arm64_real::
 	ln -sf linux-image.NEWS debian/linux-image-arm64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-arm64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='arm64' DEBUG='True' FEATURESET='none' FLAVOUR='arm64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-arm64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='arm64' DEBUG='True' FEATURESET='none' FLAVOUR='arm64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-arm64'
 binary-arch_arm64_none_real:
 binary-arch_arm64_real:
 binary-arch_armel: binary-arch_armel_extra binary-arch_armel_none binary-arch_armel_real
 binary-arch_armel_extra::
-	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-image-kirkwood' GENCONTROL_ARGS='-v4.9+79+parrot1'
-	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-headers-kirkwood' GENCONTROL_ARGS='-v4.9+79+parrot1'
-	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-image-orion5x' GENCONTROL_ARGS='-v4.9+79+parrot1'
-	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-headers-orion5x' GENCONTROL_ARGS='-v4.9+79+parrot1'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-image-kirkwood' GENCONTROL_ARGS='-v4.9+80+parrot0'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-headers-kirkwood' GENCONTROL_ARGS='-v4.9+80+parrot0'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-image-orion5x' GENCONTROL_ARGS='-v4.9+80+parrot0'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='armel' DH_OPTIONS='-plinux-headers-orion5x' GENCONTROL_ARGS='-v4.9+80+parrot0'
 binary-arch_armel_none: binary-arch_armel_none_marvell binary-arch_armel_none_real
 binary-arch_armel_none_marvell: binary-arch_armel_none_marvell_real
 binary-arch_armel_none_marvell_real::
 	ln -sf linux-image.NEWS debian/linux-image-marvell.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-marvell-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='armel' DEBUG='True' FEATURESET='none' FLAVOUR='marvell' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-marvell'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='armel' DEBUG='True' FEATURESET='none' FLAVOUR='marvell' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-marvell'
 binary-arch_armel_none_real:
 binary-arch_armel_real:
 binary-arch_armhf: binary-arch_armhf_none binary-arch_armhf_real
@@ -60,11 +60,11 @@ binary-arch_armhf_none_armmp-lpae: binary-arch_armhf_none_armmp-lpae_real
 binary-arch_armhf_none_armmp-lpae_real::
 	ln -sf linux-image.NEWS debian/linux-image-armmp-lpae.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-armmp-lpae-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='armhf' DEBUG='True' FEATURESET='none' FLAVOUR='armmp-lpae' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-armmp-lpae'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='armhf' DEBUG='True' FEATURESET='none' FLAVOUR='armmp-lpae' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-armmp-lpae'
 binary-arch_armhf_none_armmp_real::
 	ln -sf linux-image.NEWS debian/linux-image-armmp.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-armmp-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='armhf' DEBUG='True' FEATURESET='none' FLAVOUR='armmp' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-armmp'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='armhf' DEBUG='True' FEATURESET='none' FLAVOUR='armmp' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-armmp'
 binary-arch_armhf_none_real:
 binary-arch_armhf_real:
 binary-arch_hppa: binary-arch_hppa_none binary-arch_hppa_real
@@ -74,28 +74,28 @@ binary-arch_hppa_none_parisc64-smp: binary-arch_hppa_none_parisc64-smp_real
 binary-arch_hppa_none_parisc64-smp_real::
 	ln -sf linux-image.NEWS debian/linux-image-parisc64-smp.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-parisc64-smp-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='hppa' DEBUG='True' FEATURESET='none' FLAVOUR='parisc64-smp' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-parisc64-smp'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='hppa' DEBUG='True' FEATURESET='none' FLAVOUR='parisc64-smp' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-parisc64-smp'
 binary-arch_hppa_none_parisc_real::
 	ln -sf linux-image.NEWS debian/linux-image-parisc.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-parisc-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='hppa' DEBUG='True' FEATURESET='none' FLAVOUR='parisc' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-parisc'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='hppa' DEBUG='True' FEATURESET='none' FLAVOUR='parisc' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-parisc'
 binary-arch_hppa_none_real:
 binary-arch_hppa_real:
 binary-arch_i386: binary-arch_i386_extra binary-arch_i386_none binary-arch_i386_real binary-arch_i386_rt
 binary-arch_i386_extra::
-	$(MAKE) -f debian/rules.real install-dummy ARCH='i386' DH_OPTIONS='-plinux-image-586' GENCONTROL_ARGS='-v4.9+79+parrot1'
-	$(MAKE) -f debian/rules.real install-dummy ARCH='i386' DH_OPTIONS='-plinux-headers-586' GENCONTROL_ARGS='-v4.9+79+parrot1'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='i386' DH_OPTIONS='-plinux-image-586' GENCONTROL_ARGS='-v4.9+80+parrot0'
+	$(MAKE) -f debian/rules.real install-dummy ARCH='i386' DH_OPTIONS='-plinux-headers-586' GENCONTROL_ARGS='-v4.9+80+parrot0'
 binary-arch_i386_none: binary-arch_i386_none_686 binary-arch_i386_none_686-pae binary-arch_i386_none_real
 binary-arch_i386_none_686: binary-arch_i386_none_686_real
 binary-arch_i386_none_686-pae: binary-arch_i386_none_686-pae_real
 binary-arch_i386_none_686-pae_real::
 	ln -sf linux-image.NEWS debian/linux-image-686-pae.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-686-pae-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='i386' DEBUG='True' FEATURESET='none' FLAVOUR='686-pae' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-686-pae'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='i386' DEBUG='True' FEATURESET='none' FLAVOUR='686-pae' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-686-pae'
 binary-arch_i386_none_686_real::
 	ln -sf linux-image.NEWS debian/linux-image-686.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-686-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='i386' DEBUG='True' FEATURESET='none' FLAVOUR='686' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-686'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='i386' DEBUG='True' FEATURESET='none' FLAVOUR='686' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-686'
 binary-arch_i386_none_real:
 binary-arch_i386_real:
 binary-arch_i386_rt: binary-arch_i386_rt_686-pae binary-arch_i386_rt_real
@@ -103,7 +103,7 @@ binary-arch_i386_rt_686-pae: binary-arch_i386_rt_686-pae_real
 binary-arch_i386_rt_686-pae_real::
 	ln -sf linux-image.NEWS debian/linux-image-rt-686-pae.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-rt-686-pae-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='i386' DEBUG='True' FEATURESET='rt' FLAVOUR='686-pae' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-rt-686-pae'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='i386' DEBUG='True' FEATURESET='rt' FLAVOUR='686-pae' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-rt-686-pae'
 binary-arch_i386_rt_real:
 binary-arch_m68k: binary-arch_m68k_none binary-arch_m68k_real
 binary-arch_m68k_none: binary-arch_m68k_none_m68k binary-arch_m68k_none_real
@@ -111,7 +111,7 @@ binary-arch_m68k_none_m68k: binary-arch_m68k_none_m68k_real
 binary-arch_m68k_none_m68k_real::
 	ln -sf linux-image.NEWS debian/linux-image-m68k.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-m68k-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='m68k' DEBUG='True' FEATURESET='none' FLAVOUR='m68k' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-m68k'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='m68k' DEBUG='True' FEATURESET='none' FLAVOUR='m68k' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-m68k'
 binary-arch_m68k_none_real:
 binary-arch_m68k_real:
 binary-arch_mips: binary-arch_mips_none binary-arch_mips_real
@@ -121,12 +121,12 @@ binary-arch_mips64_none_5kc-malta: binary-arch_mips64_none_5kc-malta_real
 binary-arch_mips64_none_5kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips64' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-5kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips64' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-5kc-malta'
 binary-arch_mips64_none_octeon: binary-arch_mips64_none_octeon_real
 binary-arch_mips64_none_octeon_real::
 	ln -sf linux-image.NEWS debian/linux-image-octeon.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-octeon-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips64' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-octeon'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips64' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-octeon'
 binary-arch_mips64_none_real:
 binary-arch_mips64_real:
 binary-arch_mips64el: binary-arch_mips64el_none binary-arch_mips64el_real
@@ -135,17 +135,17 @@ binary-arch_mips64el_none_5kc-malta: binary-arch_mips64el_none_5kc-malta_real
 binary-arch_mips64el_none_5kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-5kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-5kc-malta'
 binary-arch_mips64el_none_loongson-3: binary-arch_mips64el_none_loongson-3_real
 binary-arch_mips64el_none_loongson-3_real::
 	ln -sf linux-image.NEWS debian/linux-image-loongson-3.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-loongson-3-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='loongson-3' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-loongson-3'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='loongson-3' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-loongson-3'
 binary-arch_mips64el_none_octeon: binary-arch_mips64el_none_octeon_real
 binary-arch_mips64el_none_octeon_real::
 	ln -sf linux-image.NEWS debian/linux-image-octeon.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-octeon-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-octeon'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips64el' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-octeon'
 binary-arch_mips64el_none_real:
 binary-arch_mips64el_real:
 binary-arch_mips_none: binary-arch_mips_none_4kc-malta binary-arch_mips_none_5kc-malta binary-arch_mips_none_octeon binary-arch_mips_none_real
@@ -153,17 +153,17 @@ binary-arch_mips_none_4kc-malta: binary-arch_mips_none_4kc-malta_real
 binary-arch_mips_none_4kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-4kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-4kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='4kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-4kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='4kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-4kc-malta'
 binary-arch_mips_none_5kc-malta: binary-arch_mips_none_5kc-malta_real
 binary-arch_mips_none_5kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-5kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-5kc-malta'
 binary-arch_mips_none_octeon: binary-arch_mips_none_octeon_real
 binary-arch_mips_none_octeon_real::
 	ln -sf linux-image.NEWS debian/linux-image-octeon.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-octeon-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-octeon'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mips' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-octeon'
 binary-arch_mips_none_real:
 binary-arch_mips_real:
 binary-arch_mipsel: binary-arch_mipsel_none binary-arch_mipsel_real
@@ -172,22 +172,22 @@ binary-arch_mipsel_none_4kc-malta: binary-arch_mipsel_none_4kc-malta_real
 binary-arch_mipsel_none_4kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-4kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-4kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='4kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-4kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='4kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-4kc-malta'
 binary-arch_mipsel_none_5kc-malta: binary-arch_mipsel_none_5kc-malta_real
 binary-arch_mipsel_none_5kc-malta_real::
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-5kc-malta-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-5kc-malta'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='5kc-malta' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-5kc-malta'
 binary-arch_mipsel_none_loongson-3: binary-arch_mipsel_none_loongson-3_real
 binary-arch_mipsel_none_loongson-3_real::
 	ln -sf linux-image.NEWS debian/linux-image-loongson-3.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-loongson-3-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='loongson-3' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-loongson-3'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='loongson-3' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-loongson-3'
 binary-arch_mipsel_none_octeon: binary-arch_mipsel_none_octeon_real
 binary-arch_mipsel_none_octeon_real::
 	ln -sf linux-image.NEWS debian/linux-image-octeon.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-octeon-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-octeon'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='mipsel' DEBUG='True' FEATURESET='none' FLAVOUR='octeon' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-octeon'
 binary-arch_mipsel_none_real:
 binary-arch_mipsel_real:
 binary-arch_mipsn32: binary-arch_mipsn32_real
@@ -201,16 +201,16 @@ binary-arch_powerpc_none_powerpc-smp: binary-arch_powerpc_none_powerpc-smp_real
 binary-arch_powerpc_none_powerpc-smp_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpc-smp.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpc-smp-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc-smp' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpc-smp'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc-smp' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpc-smp'
 binary-arch_powerpc_none_powerpc64: binary-arch_powerpc_none_powerpc64_real
 binary-arch_powerpc_none_powerpc64_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpc64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpc64'
 binary-arch_powerpc_none_powerpc_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpc.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpc-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpc'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='powerpc' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpc'
 binary-arch_powerpc_none_real:
 binary-arch_powerpc_real:
 binary-arch_powerpcspe: binary-arch_powerpcspe_none binary-arch_powerpcspe_real
@@ -219,7 +219,7 @@ binary-arch_powerpcspe_none_powerpcspe: binary-arch_powerpcspe_none_powerpcspe_r
 binary-arch_powerpcspe_none_powerpcspe_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpcspe.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpcspe-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='powerpcspe' DEBUG='True' FEATURESET='none' FLAVOUR='powerpcspe' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpcspe'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='powerpcspe' DEBUG='True' FEATURESET='none' FLAVOUR='powerpcspe' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpcspe'
 binary-arch_powerpcspe_none_real:
 binary-arch_powerpcspe_real:
 binary-arch_ppc64: binary-arch_ppc64_none binary-arch_ppc64_real
@@ -228,7 +228,7 @@ binary-arch_ppc64_none_powerpc64: binary-arch_ppc64_none_powerpc64_real
 binary-arch_ppc64_none_powerpc64_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='ppc64' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpc64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='ppc64' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpc64'
 binary-arch_ppc64_none_real:
 binary-arch_ppc64_real:
 binary-arch_ppc64el: binary-arch_ppc64el_none binary-arch_ppc64el_real
@@ -237,7 +237,7 @@ binary-arch_ppc64el_none_powerpc64le: binary-arch_ppc64el_none_powerpc64le_real
 binary-arch_ppc64el_none_powerpc64le_real::
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64le.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-powerpc64le-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='ppc64el' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64le' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-powerpc64le'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='ppc64el' DEBUG='True' FEATURESET='none' FLAVOUR='powerpc64le' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-powerpc64le'
 binary-arch_ppc64el_none_real:
 binary-arch_ppc64el_real:
 binary-arch_s390: binary-arch_s390_real
@@ -249,7 +249,7 @@ binary-arch_s390x_none_s390x: binary-arch_s390x_none_s390x_real
 binary-arch_s390x_none_s390x_real::
 	ln -sf linux-image.NEWS debian/linux-image-s390x.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-s390x-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='s390x' DEBUG='True' FEATURESET='none' FLAVOUR='s390x' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-s390x'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='s390x' DEBUG='True' FEATURESET='none' FLAVOUR='s390x' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-s390x'
 binary-arch_s390x_real:
 binary-arch_sh3: binary-arch_sh3_real
 binary-arch_sh3_real:
@@ -260,12 +260,12 @@ binary-arch_sh4_none_sh7751r: binary-arch_sh4_none_sh7751r_real
 binary-arch_sh4_none_sh7751r_real::
 	ln -sf linux-image.NEWS debian/linux-image-sh7751r.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-sh7751r-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='sh4' DEBUG='True' FEATURESET='none' FLAVOUR='sh7751r' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-sh7751r'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='sh4' DEBUG='True' FEATURESET='none' FLAVOUR='sh7751r' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-sh7751r'
 binary-arch_sh4_none_sh7785lcr: binary-arch_sh4_none_sh7785lcr_real
 binary-arch_sh4_none_sh7785lcr_real::
 	ln -sf linux-image.NEWS debian/linux-image-sh7785lcr.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-sh7785lcr-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='sh4' DEBUG='True' FEATURESET='none' FLAVOUR='sh7785lcr' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-sh7785lcr'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='sh4' DEBUG='True' FEATURESET='none' FLAVOUR='sh7785lcr' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-sh7785lcr'
 binary-arch_sh4_real:
 binary-arch_sparc: binary-arch_sparc_real
 binary-arch_sparc64: binary-arch_sparc64_none binary-arch_sparc64_real
@@ -276,11 +276,11 @@ binary-arch_sparc64_none_sparc64-smp: binary-arch_sparc64_none_sparc64-smp_real
 binary-arch_sparc64_none_sparc64-smp_real::
 	ln -sf linux-image.NEWS debian/linux-image-sparc64-smp.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-sparc64-smp-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='sparc64' DEBUG='True' FEATURESET='none' FLAVOUR='sparc64-smp' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-sparc64-smp'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='sparc64' DEBUG='True' FEATURESET='none' FLAVOUR='sparc64-smp' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-sparc64-smp'
 binary-arch_sparc64_none_sparc64_real::
 	ln -sf linux-image.NEWS debian/linux-image-sparc64.NEWS
 	ln -sf linux-image.NEWS debian/linux-image-sparc64-dbgsym.NEWS
-	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot13' ARCH='sparc64' DEBUG='True' FEATURESET='none' FLAVOUR='sparc64' GENCONTROL_ARGS='-v4.9+79+parrot1' LOCALVERSION='-sparc64'
+	$(MAKE) -f debian/rules.real install-flavour ABINAME='4.9.0-parrot16' ARCH='sparc64' DEBUG='True' FEATURESET='none' FLAVOUR='sparc64' GENCONTROL_ARGS='-v4.9+80+parrot0' LOCALVERSION='-sparc64'
 binary-arch_sparc64_real:
 binary-arch_sparc_real:
 binary-arch_tilegx: binary-arch_tilegx_real
@@ -289,9 +289,9 @@ binary-arch_x32: binary-arch_x32_real
 binary-arch_x32_real:
 binary-indep:: binary-indep_extra binary-indep_none binary-indep_rt
 binary-indep::
-	$(MAKE) -f debian/rules.real binary-indep GENCONTROL_ARGS='-v4.9+79+parrot1'
+	$(MAKE) -f debian/rules.real binary-indep GENCONTROL_ARGS='-v4.9+80+parrot0'
 binary-indep_extra::
-	$(MAKE) -f debian/rules.real install-dummy  DH_OPTIONS='-plinux-tools' GENCONTROL_ARGS='-v4.9+79+parrot1'
+	$(MAKE) -f debian/rules.real install-dummy  DH_OPTIONS='-plinux-tools' GENCONTROL_ARGS='-v4.9+80+parrot0'
 binary-indep_none: binary-indep_none_real
 binary-indep_none_real:
 binary-indep_rt: binary-indep_rt_real
@@ -467,7 +467,7 @@ build-arch_x32: build-arch_x32_real
 build-arch_x32_real:
 build-indep:: build-indep_none build-indep_rt
 build-indep::
-	$(MAKE) -f debian/rules.real build-indep GENCONTROL_ARGS='-v4.9+79+parrot1'
+	$(MAKE) -f debian/rules.real build-indep GENCONTROL_ARGS='-v4.9+80+parrot0'
 build-indep_none: build-indep_none_real
 build-indep_none_real:
 build-indep_rt: build-indep_rt_real
