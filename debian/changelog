@@ -1,3 +1,15 @@
+linux-latest (85+parrot1) testing; urgency=medium
+
+  * Update for linux 4.12.0-parrot6 (4.12.6).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 29 Aug 2017 22:45:06 +0200
+
+linux-latest (84+parrot1) testing; urgency=medium
+
+  * Rebuild.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 29 Jun 2017 18:07:01 +0200
+
 linux-latest (84+parrot0) testing; urgency=medium
 
   * Update for linux 4.11.0-parrot6 (4.11.6)
