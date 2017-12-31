@@ -1,3 +1,15 @@
+linux-latest (90+parrot1) testing; urgency=medium
+
+  * Update to linux 4.14.0-parrot7 (4.14.7).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 31 Dec 2017 14:23:25 +0100
+
+linux-latest (89+parrot1) testing; urgency=medium
+
+  * Update to linux 4.14.0-parrot2 (4.14.2).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 07 Dec 2017 13:50:39 +0100
+
 linux-latest (88+parrot1) testing; urgency=medium
 
   * Update to linux 4.13.0-1parrot13 (4.13.13).
