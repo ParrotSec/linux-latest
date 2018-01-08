@@ -42,6 +42,7 @@ Description: Linux for Alpha (meta-package)
 Package: linux-headers-alpha-generic
 Architecture: alpha
 Depends: linux-headers-4.14.0-parrot12-alpha-generic, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux alpha-generic configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel alpha-generic configuration.
@@ -68,6 +69,7 @@ Description: Linux for Alpha SMP (meta-package)
 Package: linux-headers-alpha-smp
 Architecture: alpha
 Depends: linux-headers-4.14.0-parrot12-alpha-smp, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux alpha-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel alpha-smp configuration.
@@ -96,6 +98,7 @@ Description: Linux for 64-bit PCs (meta-package)
 Package: linux-headers-amd64
 Architecture: amd64
 Depends: linux-headers-4.14.0-parrot12-amd64, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel amd64 configuration.
@@ -123,6 +126,7 @@ Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
 Package: linux-headers-rt-amd64
 Architecture: amd64
 Depends: linux-headers-4.14.0-parrot12-rt-amd64, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux rt-amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel rt-amd64 configuration.
@@ -148,6 +152,7 @@ Description: Linux for 64-bit ARMv8 machines (meta-package)
 Package: linux-headers-arm64
 Architecture: arm64
 Depends: linux-headers-4.14.0-parrot12-arm64, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux arm64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel arm64 configuration.
@@ -174,6 +179,7 @@ Description: Linux for Marvell Kirkwood/Orion (meta-package)
 Package: linux-headers-marvell
 Architecture: armel
 Depends: linux-headers-4.14.0-parrot12-marvell, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux marvell configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel marvell configuration.
@@ -201,6 +207,7 @@ Description: Linux for ARMv7 multiplatform compatible SoCs (meta-package)
 Package: linux-headers-armmp
 Architecture: armhf
 Depends: linux-headers-4.14.0-parrot12-armmp, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux armmp configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel armmp configuration.
@@ -228,6 +235,7 @@ Description: Linux for ARMv7 multiplatform compatible SoCs supporting LPAE (meta
 Package: linux-headers-armmp-lpae
 Architecture: armhf
 Depends: linux-headers-4.14.0-parrot12-armmp-lpae, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux armmp-lpae configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel armmp-lpae configuration.
@@ -253,6 +261,7 @@ Description: Linux for 32-bit PA-RISC (meta-package)
 Package: linux-headers-parisc
 Architecture: hppa
 Depends: linux-headers-4.14.0-parrot12-parisc, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux parisc configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel parisc configuration.
@@ -278,6 +287,7 @@ Description: Linux for multiprocessor 64-bit PA-RISC (meta-package)
 Package: linux-headers-parisc64-smp
 Architecture: hppa
 Depends: linux-headers-4.14.0-parrot12-parisc64-smp, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux parisc64-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel parisc64-smp configuration.
@@ -303,6 +313,7 @@ Description: Linux for older PCs (meta-package)
 Package: linux-headers-686
 Architecture: i386
 Depends: linux-headers-4.14.0-parrot12-686, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux 686 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel 686 configuration.
@@ -336,6 +347,7 @@ Description: Linux for modern PCs (meta-package)
 Package: linux-headers-686-pae
 Architecture: i386
 Depends: linux-headers-4.14.0-parrot12-686-pae, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux 686-pae configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel 686-pae configuration.
@@ -368,6 +380,7 @@ Description: Linux for modern PCs (meta-package), PREEMPT_RT
 Package: linux-headers-rt-686-pae
 Architecture: i386
 Depends: linux-headers-4.14.0-parrot12-rt-686-pae, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux rt-686-pae configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel rt-686-pae configuration.
@@ -393,6 +406,7 @@ Description: Linux for Motorola MC68020+ family (meta-package)
 Package: linux-headers-m68k
 Architecture: m68k
 Depends: linux-headers-4.14.0-parrot12-m68k, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux m68k configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel m68k configuration.
@@ -418,6 +432,7 @@ Description: Linux for MIPS Malta (meta-package)
 Package: linux-headers-4kc-malta
 Architecture: mips mipsel
 Depends: linux-headers-4.14.0-parrot12-4kc-malta, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux 4kc-malta configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel 4kc-malta configuration.
@@ -443,6 +458,7 @@ Description: Linux for MIPS Malta (64-bit) (meta-package)
 Package: linux-headers-5kc-malta
 Architecture: mips mips64 mips64el mipsel
 Depends: linux-headers-4.14.0-parrot12-5kc-malta, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux 5kc-malta configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel 5kc-malta configuration.
@@ -468,6 +484,7 @@ Description: Linux for Octeon (meta-package)
 Package: linux-headers-octeon
 Architecture: mips mips64 mips64el mipsel
 Depends: linux-headers-4.14.0-parrot12-octeon, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux octeon configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel octeon configuration.
@@ -493,6 +510,7 @@ Description: Linux for Loongson 3A/3B (meta-package)
 Package: linux-headers-loongson-3
 Architecture: mips64el mipsel
 Depends: linux-headers-4.14.0-parrot12-loongson-3, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux loongson-3 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel loongson-3 configuration.
@@ -518,6 +536,7 @@ Description: Linux for MIPS R6 (64 bit, big endian) (meta-package)
 Package: linux-headers-mips64r6
 Architecture: mips64r6 mipsr6
 Depends: linux-headers-4.14.0-parrot12-mips64r6, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux mips64r6 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel mips64r6 configuration.
@@ -543,6 +562,7 @@ Description: Linux for MIPS R6 (64 bit, little endian) (meta-package)
 Package: linux-headers-mips64r6el
 Architecture: mips64r6el mipsr6el
 Depends: linux-headers-4.14.0-parrot12-mips64r6el, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux mips64r6el configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel mips64r6el configuration.
@@ -568,6 +588,7 @@ Description: Linux for MIPS R6 (32 bit, big endian) (meta-package)
 Package: linux-headers-mips32r6
 Architecture: mipsr6
 Depends: linux-headers-4.14.0-parrot12-mips32r6, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux mips32r6 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel mips32r6 configuration.
@@ -593,6 +614,7 @@ Description: Linux for MIPS R6 (32 bit, little endian) (meta-package)
 Package: linux-headers-mips32r6el
 Architecture: mipsr6el
 Depends: linux-headers-4.14.0-parrot12-mips32r6el, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux mips32r6el configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel mips32r6el configuration.
@@ -618,6 +640,7 @@ Description: Linux for uniprocessor 32-bit PowerPC (meta-package)
 Package: linux-headers-powerpc
 Architecture: powerpc
 Depends: linux-headers-4.14.0-parrot12-powerpc, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux powerpc configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel powerpc configuration.
@@ -643,6 +666,7 @@ Description: Linux for multiprocessor 32-bit PowerPC (meta-package)
 Package: linux-headers-powerpc-smp
 Architecture: powerpc
 Depends: linux-headers-4.14.0-parrot12-powerpc-smp, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux powerpc-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel powerpc-smp configuration.
@@ -668,6 +692,7 @@ Description: Linux for 64-bit PowerPC (meta-package)
 Package: linux-headers-powerpc64
 Architecture: powerpc ppc64
 Depends: linux-headers-4.14.0-parrot12-powerpc64, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux powerpc64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel powerpc64 configuration.
@@ -693,6 +718,7 @@ Description: Linux for 32-bit PowerPC with SPE (instead of AltiVec) with SMP sup
 Package: linux-headers-powerpcspe
 Architecture: powerpcspe
 Depends: linux-headers-4.14.0-parrot12-powerpcspe, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux powerpcspe configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel powerpcspe configuration.
@@ -718,6 +744,7 @@ Description: Linux for Little-endian 64-bit PowerPC (meta-package)
 Package: linux-headers-powerpc64le
 Architecture: ppc64el
 Depends: linux-headers-4.14.0-parrot12-powerpc64le, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux powerpc64le configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel powerpc64le configuration.
@@ -743,6 +770,7 @@ Description: Linux for IBM zSeries (meta-package)
 Package: linux-headers-s390x
 Architecture: s390x
 Depends: linux-headers-4.14.0-parrot12-s390x, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux s390x configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel s390x configuration.
@@ -768,6 +796,7 @@ Description: Linux for sh7751r (meta-package)
 Package: linux-headers-sh7751r
 Architecture: sh4
 Depends: linux-headers-4.14.0-parrot12-sh7751r, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux sh7751r configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel sh7751r configuration.
@@ -793,6 +822,7 @@ Description: Linux for sh7785lcr (meta-package)
 Package: linux-headers-sh7785lcr
 Architecture: sh4
 Depends: linux-headers-4.14.0-parrot12-sh7785lcr, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux sh7785lcr configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel sh7785lcr configuration.
@@ -818,6 +848,7 @@ Description: Linux for uniprocessor 64-bit UltraSPARC (meta-package)
 Package: linux-headers-sparc64
 Architecture: sparc64
 Depends: linux-headers-4.14.0-parrot12-sparc64, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux sparc64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel sparc64 configuration.
@@ -843,6 +874,7 @@ Description: Linux for multiprocessor 64-bit UltraSPARC (meta-package)
 Package: linux-headers-sparc64-smp
 Architecture: sparc64
 Depends: linux-headers-4.14.0-parrot12-sparc64-smp, ${misc:Depends}
+Recommends: libelf-dev
 Description: Header files for Linux sparc64-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
  latest Linux kernel sparc64-smp configuration.
