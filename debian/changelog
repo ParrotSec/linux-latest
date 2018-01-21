@@ -1,3 +1,9 @@
+linux-latest (92+parrot1) testing; urgency=medium
+
+  * Update to linux 4.14.0-parrot13 (4.14.13).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Jan 2018 23:14:14 +0100
+
 linux-latest (91+parrot2) testing; urgency=medium
 
   * Add libelf-dev as a recommended package of linux-headers-*
