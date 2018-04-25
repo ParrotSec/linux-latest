@@ -3,6 +3,7 @@ linux-latest source: dbg-package-missing-depends linux-image-alpha-smp-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-amd64-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-cloud-amd64-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-arm64-dbgsym
+linux-latest source: dbg-package-missing-depends linux-image-marvell-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-armmp-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-armmp-lpae-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-parisc-dbgsym
