@@ -7,9 +7,12 @@ linux-latest source: dbg-package-missing-depends linux-image-marvell-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-armmp-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-armmp-lpae-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-parisc-dbgsym
+linux-latest source: dbg-package-missing-depends linux-image-parisc-smp-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-parisc64-smp-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-686-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-686-pae-dbgsym
+linux-latest source: dbg-package-missing-depends linux-image-itanium-dbgsym
+linux-latest source: dbg-package-missing-depends linux-image-mckinley-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-m68k-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-4kc-malta-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-5kc-malta-dbgsym
