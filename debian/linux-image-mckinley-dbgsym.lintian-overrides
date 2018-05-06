@@ -1,0 +1,2 @@
+linux-image-mckinley-dbgsym: wrong-section-according-to-package-name linux-image-mckinley-dbgsym => debug
+linux-image-mckinley-dbgsym: debug-package-should-be-priority-extra linux-image-mckinley-dbgsym
