@@ -1,3 +1,9 @@
+linux-latest (96+parrot2) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 30 May 2018 13:21:50 +0200
+
 linux-latest (96+parrot1) testing; urgency=medium
 
   * Update to linux 4.16.0-parrot12 (4.16.12).
