@@ -1,3 +1,9 @@
+linux-latest (102+parrot1) testing; urgency=medium
+
+  * Update to Linux 4.18.0-parrot20 (4.18.20).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 13 Dec 2018 16:47:03 +0100
+
 linux-latest (101+parrot1) testing; urgency=medium
 
   * Update to Linux 4.18.0-parrot10 (4.18.10).
