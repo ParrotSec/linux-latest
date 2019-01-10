@@ -1,4 +1,4 @@
 BUILD_DIR = debian/build
 STAMPS_DIR = debian/stamps
 TEMPLATES_DIR = debian/templates
-KERNELVERSION := 4.18.0-parrot20
+KERNELVERSION := 4.19.0-parrot1-13t

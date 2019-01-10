@@ -39,6 +39,7 @@ linux-latest source: dbg-package-missing-depends linux-image-powerpc64-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-powerpcspe-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-powerpc64-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-powerpc64le-dbgsym
+linux-latest source: dbg-package-missing-depends linux-image-riscv64-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-s390x-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-sh7751r-dbgsym
 linux-latest source: dbg-package-missing-depends linux-image-sh7785lcr-dbgsym
