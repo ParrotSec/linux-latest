@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Parrot Dev Team <parrot-devel@lists.parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 3.9.8
-Build-Depends: debhelper (>> 7), linux-support-4.19.0-parrot1-13t, linux-headers-4.19.0-parrot1-13t-all
+Build-Depends: debhelper (>> 7), linux-support-4.19.0-parrot1-20t, linux-headers-4.19.0-parrot1-20t-all
 Vcs-Browser: https://anonscm.debian.org/cgit/kernel/linux-latest.git
 Vcs-Git: https://anonscm.debian.org/git/kernel/linux-latest.git
 
@@ -32,8 +32,8 @@ Description: Performance analysis tools for Linux (meta-package)
 
 Package: linux-image-alpha-generic
 Architecture: alpha
-Provides: linux-latest-modules-4.19.0-parrot1-13t-alpha-generic
-Depends: linux-image-4.19.0-parrot1-13t-alpha-generic, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-alpha-generic
+Depends: linux-image-4.19.0-parrot1-20t-alpha-generic, ${misc:Depends}
 Description: Linux for Alpha (meta-package)
  This package depends on the latest Linux kernel and modules for use on DEC
  Alpha systems with extended kernel start address (Wildfire, Titan,
@@ -41,7 +41,7 @@ Description: Linux for Alpha (meta-package)
 
 Package: linux-headers-alpha-generic
 Architecture: alpha
-Depends: linux-headers-4.19.0-parrot1-13t-alpha-generic, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-alpha-generic, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux alpha-generic configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -52,15 +52,15 @@ Architecture: alpha
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-alpha-generic-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-alpha-generic-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux alpha-generic configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel alpha-generic configuration.
 
 Package: linux-image-alpha-smp
 Architecture: alpha
-Provides: linux-latest-modules-4.19.0-parrot1-13t-alpha-smp
-Depends: linux-image-4.19.0-parrot1-13t-alpha-smp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-alpha-smp
+Depends: linux-image-4.19.0-parrot1-20t-alpha-smp, ${misc:Depends}
 Description: Linux for Alpha SMP (meta-package)
  This package depends on the latest Linux kernel and modules for use on DEC
  Alpha SMP systems with extended kernel start address (Wildfire, Titan,
@@ -68,7 +68,7 @@ Description: Linux for Alpha SMP (meta-package)
 
 Package: linux-headers-alpha-smp
 Architecture: alpha
-Depends: linux-headers-4.19.0-parrot1-13t-alpha-smp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-alpha-smp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux alpha-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -79,22 +79,22 @@ Architecture: alpha
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-alpha-smp-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-alpha-smp-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux alpha-smp configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel alpha-smp configuration.
 
 Package: linux-image-amd64
 Architecture: amd64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-amd64
-Depends: linux-image-4.19.0-parrot1-13t-amd64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-amd64
+Depends: linux-image-4.19.0-parrot1-20t-amd64, ${misc:Depends}
 Description: Linux for 64-bit PCs (meta-package)
  This package depends on the latest Linux kernel and modules for use on PCs
  with AMD64, Intel 64 or VIA Nano processors.
 
 Package: linux-headers-amd64
 Architecture: amd64
-Depends: linux-headers-4.19.0-parrot1-13t-amd64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-amd64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -105,22 +105,22 @@ Architecture: amd64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-amd64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-amd64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux amd64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel amd64 configuration.
 
 Package: linux-image-cloud-amd64
 Architecture: amd64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-cloud-amd64
-Depends: linux-image-4.19.0-parrot1-13t-cloud-amd64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-cloud-amd64
+Depends: linux-image-4.19.0-parrot1-20t-cloud-amd64, ${misc:Depends}
 Description: Linux for x86-64 cloud (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Amazon EC2, Google Compute Engine and Microsoft Azure cloud platforms.
 
 Package: linux-headers-cloud-amd64
 Architecture: amd64
-Depends: linux-headers-4.19.0-parrot1-13t-cloud-amd64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-cloud-amd64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux cloud-amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -131,15 +131,15 @@ Architecture: amd64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-cloud-amd64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-cloud-amd64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux cloud-amd64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel cloud-amd64 configuration.
 
 Package: linux-image-rt-amd64
 Architecture: amd64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-rt-amd64
-Depends: linux-image-4.19.0-parrot1-13t-rt-amd64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-rt-amd64
+Depends: linux-image-4.19.0-parrot1-20t-rt-amd64, ${misc:Depends}
 Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
  This package depends on the latest Linux kernel and modules for use on PCs
  with AMD64, Intel 64 or VIA Nano processors.
@@ -148,7 +148,7 @@ Description: Linux for 64-bit PCs (meta-package), PREEMPT_RT
 
 Package: linux-headers-rt-amd64
 Architecture: amd64
-Depends: linux-headers-4.19.0-parrot1-13t-rt-amd64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-rt-amd64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux rt-amd64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -159,22 +159,22 @@ Architecture: amd64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-rt-amd64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-rt-amd64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux rt-amd64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel rt-amd64 configuration.
 
 Package: linux-image-arm64
 Architecture: arm64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-arm64
-Depends: linux-image-4.19.0-parrot1-13t-arm64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-arm64
+Depends: linux-image-4.19.0-parrot1-20t-arm64, ${misc:Depends}
 Description: Linux for 64-bit ARMv8 machines (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  64-bit ARMv8 machines.
 
 Package: linux-headers-arm64
 Architecture: arm64
-Depends: linux-headers-4.19.0-parrot1-13t-arm64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-arm64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux arm64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -185,15 +185,15 @@ Architecture: arm64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-arm64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-arm64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux arm64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel arm64 configuration.
 
 Package: linux-image-rt-arm64
 Architecture: arm64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-rt-arm64
-Depends: linux-image-4.19.0-parrot1-13t-rt-arm64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-rt-arm64
+Depends: linux-image-4.19.0-parrot1-20t-rt-arm64, ${misc:Depends}
 Description: Linux for 64-bit ARMv8 machines (meta-package), PREEMPT_RT
  This package depends on the latest Linux kernel and modules for use on
  64-bit ARMv8 machines.
@@ -202,7 +202,7 @@ Description: Linux for 64-bit ARMv8 machines (meta-package), PREEMPT_RT
 
 Package: linux-headers-rt-arm64
 Architecture: arm64
-Depends: linux-headers-4.19.0-parrot1-13t-rt-arm64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-rt-arm64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux rt-arm64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -213,15 +213,15 @@ Architecture: arm64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-rt-arm64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-rt-arm64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux rt-arm64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel rt-arm64 configuration.
 
 Package: linux-image-marvell
 Architecture: armel
-Provides: linux-latest-modules-4.19.0-parrot1-13t-marvell
-Depends: linux-image-4.19.0-parrot1-13t-marvell, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-marvell
+Depends: linux-image-4.19.0-parrot1-20t-marvell, ${misc:Depends}
 Description: Linux for Marvell Kirkwood/Orion (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Marvell Kirkwood and Orion based systems
@@ -229,7 +229,7 @@ Description: Linux for Marvell Kirkwood/Orion (meta-package)
 
 Package: linux-headers-marvell
 Architecture: armel
-Depends: linux-headers-4.19.0-parrot1-13t-marvell, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-marvell, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux marvell configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -240,15 +240,15 @@ Architecture: armel
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-marvell-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-marvell-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux marvell configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel marvell configuration.
 
 Package: linux-image-armmp
 Architecture: armhf
-Provides: linux-latest-modules-4.19.0-parrot1-13t-armmp
-Depends: linux-image-4.19.0-parrot1-13t-armmp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-armmp
+Depends: linux-image-4.19.0-parrot1-20t-armmp, ${misc:Depends}
 Description: Linux for ARMv7 multiplatform compatible SoCs (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  ARMv7 multiplatform kernel.  See
@@ -257,7 +257,7 @@ Description: Linux for ARMv7 multiplatform compatible SoCs (meta-package)
 
 Package: linux-headers-armmp
 Architecture: armhf
-Depends: linux-headers-4.19.0-parrot1-13t-armmp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-armmp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux armmp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -268,15 +268,15 @@ Architecture: armhf
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-armmp-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-armmp-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux armmp configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel armmp configuration.
 
 Package: linux-image-armmp-lpae
 Architecture: armhf
-Provides: linux-latest-modules-4.19.0-parrot1-13t-armmp-lpae
-Depends: linux-image-4.19.0-parrot1-13t-armmp-lpae, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-armmp-lpae
+Depends: linux-image-4.19.0-parrot1-20t-armmp-lpae, ${misc:Depends}
 Description: Linux for ARMv7 multiplatform compatible SoCs supporting LPAE (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  ARMv7 multiplatform kernel supporting LPAE. See
@@ -285,7 +285,7 @@ Description: Linux for ARMv7 multiplatform compatible SoCs supporting LPAE (meta
 
 Package: linux-headers-armmp-lpae
 Architecture: armhf
-Depends: linux-headers-4.19.0-parrot1-13t-armmp-lpae, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-armmp-lpae, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux armmp-lpae configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -296,15 +296,15 @@ Architecture: armhf
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-armmp-lpae-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-armmp-lpae-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux armmp-lpae configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel armmp-lpae configuration.
 
 Package: linux-image-rt-armmp
 Architecture: armhf
-Provides: linux-latest-modules-4.19.0-parrot1-13t-rt-armmp
-Depends: linux-image-4.19.0-parrot1-13t-rt-armmp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-rt-armmp
+Depends: linux-image-4.19.0-parrot1-20t-rt-armmp, ${misc:Depends}
 Description: Linux for ARMv7 multiplatform compatible SoCs (meta-package), PREEMPT_RT
  This package depends on the latest Linux kernel and modules for use on
  ARMv7 multiplatform kernel.  See
@@ -315,7 +315,7 @@ Description: Linux for ARMv7 multiplatform compatible SoCs (meta-package), PREEM
 
 Package: linux-headers-rt-armmp
 Architecture: armhf
-Depends: linux-headers-4.19.0-parrot1-13t-rt-armmp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-rt-armmp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux rt-armmp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -326,22 +326,22 @@ Architecture: armhf
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-rt-armmp-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-rt-armmp-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux rt-armmp configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel rt-armmp configuration.
 
 Package: linux-image-parisc
 Architecture: hppa
-Provides: linux-latest-modules-4.19.0-parrot1-13t-parisc
-Depends: linux-image-4.19.0-parrot1-13t-parisc, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-parisc
+Depends: linux-image-4.19.0-parrot1-20t-parisc, ${misc:Depends}
 Description: Linux for 32-bit PA-RISC (meta-package)
  This package depends on the latest Linux kernel and modules for use on HP
  PA-RISC 32-bit systems with max 4 GB RAM.
 
 Package: linux-headers-parisc
 Architecture: hppa
-Depends: linux-headers-4.19.0-parrot1-13t-parisc, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-parisc, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux parisc configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -349,15 +349,15 @@ Description: Header files for Linux parisc configuration (meta-package)
 
 Package: linux-image-parisc-smp
 Architecture: hppa
-Provides: linux-latest-modules-4.19.0-parrot1-13t-parisc-smp
-Depends: linux-image-4.19.0-parrot1-13t-parisc-smp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-parisc-smp
+Depends: linux-image-4.19.0-parrot1-20t-parisc-smp, ${misc:Depends}
 Description: Linux for multiprocessor 32-bit PA-RISC (meta-package)
  This package depends on the latest Linux kernel and modules for use on HP
  PA-RISC 32-bit SMP systems with max 4 GB RAM.
 
 Package: linux-headers-parisc-smp
 Architecture: hppa
-Depends: linux-headers-4.19.0-parrot1-13t-parisc-smp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-parisc-smp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux parisc-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -365,15 +365,15 @@ Description: Header files for Linux parisc-smp configuration (meta-package)
 
 Package: linux-image-parisc64-smp
 Architecture: hppa
-Provides: linux-latest-modules-4.19.0-parrot1-13t-parisc64-smp
-Depends: linux-image-4.19.0-parrot1-13t-parisc64-smp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-parisc64-smp
+Depends: linux-image-4.19.0-parrot1-20t-parisc64-smp, ${misc:Depends}
 Description: Linux for multiprocessor 64-bit PA-RISC (meta-package)
  This package depends on the latest Linux kernel and modules for use on HP
  PA-RISC 64-bit SMP systems with support for more than 4 GB RAM.
 
 Package: linux-headers-parisc64-smp
 Architecture: hppa
-Depends: linux-headers-4.19.0-parrot1-13t-parisc64-smp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-parisc64-smp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux parisc64-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -381,15 +381,15 @@ Description: Header files for Linux parisc64-smp configuration (meta-package)
 
 Package: linux-image-686
 Architecture: i386
-Provides: linux-latest-modules-4.19.0-parrot1-13t-686
-Depends: linux-image-4.19.0-parrot1-13t-686, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-686
+Depends: linux-image-4.19.0-parrot1-20t-686, ${misc:Depends}
 Description: Linux for older PCs (meta-package)
  This package depends on the latest Linux kernel and modules for use on PCs
  with one or more processors not supporting PAE.
 
 Package: linux-headers-686
 Architecture: i386
-Depends: linux-headers-4.19.0-parrot1-13t-686, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-686, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux 686 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -400,15 +400,15 @@ Architecture: i386
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-686-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-686-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux 686 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel 686 configuration.
 
 Package: linux-image-686-pae
 Architecture: i386
-Provides: linux-latest-modules-4.19.0-parrot1-13t-686-pae
-Depends: linux-image-4.19.0-parrot1-13t-686-pae, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-686-pae
+Depends: linux-image-4.19.0-parrot1-20t-686-pae, ${misc:Depends}
 Description: Linux for modern PCs (meta-package)
  This package depends on the latest Linux kernel and modules for use on PCs
  with one or more processors supporting PAE.
@@ -420,7 +420,7 @@ Description: Linux for modern PCs (meta-package)
 
 Package: linux-headers-686-pae
 Architecture: i386
-Depends: linux-headers-4.19.0-parrot1-13t-686-pae, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-686-pae, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux 686-pae configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -431,15 +431,15 @@ Architecture: i386
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-686-pae-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-686-pae-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux 686-pae configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel 686-pae configuration.
 
 Package: linux-image-rt-686-pae
 Architecture: i386
-Provides: linux-latest-modules-4.19.0-parrot1-13t-rt-686-pae
-Depends: linux-image-4.19.0-parrot1-13t-rt-686-pae, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-rt-686-pae
+Depends: linux-image-4.19.0-parrot1-20t-rt-686-pae, ${misc:Depends}
 Description: Linux for modern PCs (meta-package), PREEMPT_RT
  This package depends on the latest Linux kernel and modules for use on PCs
  with one or more processors supporting PAE.
@@ -453,7 +453,7 @@ Description: Linux for modern PCs (meta-package), PREEMPT_RT
 
 Package: linux-headers-rt-686-pae
 Architecture: i386
-Depends: linux-headers-4.19.0-parrot1-13t-rt-686-pae, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-rt-686-pae, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux rt-686-pae configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -464,22 +464,22 @@ Architecture: i386
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-rt-686-pae-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-rt-686-pae-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux rt-686-pae configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel rt-686-pae configuration.
 
 Package: linux-image-itanium
 Architecture: ia64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-itanium
-Depends: linux-image-4.19.0-parrot1-13t-itanium, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-itanium
+Depends: linux-image-4.19.0-parrot1-20t-itanium, ${misc:Depends}
 Description: Linux for Itanium (Merced) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  systems with original Itanium (Merced) processors.
 
 Package: linux-headers-itanium
 Architecture: ia64
-Depends: linux-headers-4.19.0-parrot1-13t-itanium, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-itanium, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux itanium configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -490,22 +490,22 @@ Architecture: ia64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-itanium-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-itanium-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux itanium configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel itanium configuration.
 
 Package: linux-image-mckinley
 Architecture: ia64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-mckinley
-Depends: linux-image-4.19.0-parrot1-13t-mckinley, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-mckinley
+Depends: linux-image-4.19.0-parrot1-20t-mckinley, ${misc:Depends}
 Description: Linux for Itanium 2+ (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  systems with Itanium 2 or 9300/9500/9700-series processors.
 
 Package: linux-headers-mckinley
 Architecture: ia64
-Depends: linux-headers-4.19.0-parrot1-13t-mckinley, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-mckinley, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux mckinley configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -516,22 +516,22 @@ Architecture: ia64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-mckinley-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-mckinley-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux mckinley configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel mckinley configuration.
 
 Package: linux-image-m68k
 Architecture: m68k
-Provides: linux-latest-modules-4.19.0-parrot1-13t-m68k
-Depends: linux-image-4.19.0-parrot1-13t-m68k, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-m68k
+Depends: linux-image-4.19.0-parrot1-20t-m68k, ${misc:Depends}
 Description: Linux for Motorola MC68020+ family (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Motorola MC68020+ family.
 
 Package: linux-headers-m68k
 Architecture: m68k
-Depends: linux-headers-4.19.0-parrot1-13t-m68k, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-m68k, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux m68k configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -542,22 +542,22 @@ Architecture: m68k
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-m68k-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-m68k-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux m68k configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel m68k configuration.
 
 Package: linux-image-4kc-malta
 Architecture: mips mipsel
-Provides: linux-latest-modules-4.19.0-parrot1-13t-4kc-malta
-Depends: linux-image-4.19.0-parrot1-13t-4kc-malta, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-4kc-malta
+Depends: linux-image-4.19.0-parrot1-20t-4kc-malta, ${misc:Depends}
 Description: Linux for MIPS Malta (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS Malta boards.
 
 Package: linux-headers-4kc-malta
 Architecture: mips mipsel
-Depends: linux-headers-4.19.0-parrot1-13t-4kc-malta, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-4kc-malta, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux 4kc-malta configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -568,22 +568,22 @@ Architecture: mips mipsel
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-4kc-malta-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-4kc-malta-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux 4kc-malta configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel 4kc-malta configuration.
 
 Package: linux-image-5kc-malta
 Architecture: mips mips64 mips64el mipsel
-Provides: linux-latest-modules-4.19.0-parrot1-13t-5kc-malta
-Depends: linux-image-4.19.0-parrot1-13t-5kc-malta, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-5kc-malta
+Depends: linux-image-4.19.0-parrot1-20t-5kc-malta, ${misc:Depends}
 Description: Linux for MIPS Malta (64-bit) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS Malta boards (64-bit).
 
 Package: linux-headers-5kc-malta
 Architecture: mips mips64 mips64el mipsel
-Depends: linux-headers-4.19.0-parrot1-13t-5kc-malta, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-5kc-malta, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux 5kc-malta configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -594,22 +594,22 @@ Architecture: mips mips64 mips64el mipsel
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-5kc-malta-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-5kc-malta-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux 5kc-malta configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel 5kc-malta configuration.
 
 Package: linux-image-octeon
 Architecture: mips mips64 mips64el mipsel
-Provides: linux-latest-modules-4.19.0-parrot1-13t-octeon
-Depends: linux-image-4.19.0-parrot1-13t-octeon, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-octeon
+Depends: linux-image-4.19.0-parrot1-20t-octeon, ${misc:Depends}
 Description: Linux for Octeon (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Cavium Networks Octeon.
 
 Package: linux-headers-octeon
 Architecture: mips mips64 mips64el mipsel
-Depends: linux-headers-4.19.0-parrot1-13t-octeon, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-octeon, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux octeon configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -620,22 +620,22 @@ Architecture: mips mips64 mips64el mipsel
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-octeon-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-octeon-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux octeon configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel octeon configuration.
 
 Package: linux-image-loongson-3
 Architecture: mips64el mipsel
-Provides: linux-latest-modules-4.19.0-parrot1-13t-loongson-3
-Depends: linux-image-4.19.0-parrot1-13t-loongson-3, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-loongson-3
+Depends: linux-image-4.19.0-parrot1-20t-loongson-3, ${misc:Depends}
 Description: Linux for Loongson 3A/3B (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Loongson 3A or 3B based systems (e.g.  from Loongson or Lemote).
 
 Package: linux-headers-loongson-3
 Architecture: mips64el mipsel
-Depends: linux-headers-4.19.0-parrot1-13t-loongson-3, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-loongson-3, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux loongson-3 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -646,22 +646,22 @@ Architecture: mips64el mipsel
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-loongson-3-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-loongson-3-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux loongson-3 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel loongson-3 configuration.
 
 Package: linux-image-mips64r6
 Architecture: mips64r6 mipsr6
-Provides: linux-latest-modules-4.19.0-parrot1-13t-mips64r6
-Depends: linux-image-4.19.0-parrot1-13t-mips64r6, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-mips64r6
+Depends: linux-image-4.19.0-parrot1-20t-mips64r6, ${misc:Depends}
 Description: Linux for MIPS R6 (64 bit, big endian) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS R6 (64 bit, big endian).
 
 Package: linux-headers-mips64r6
 Architecture: mips64r6 mipsr6
-Depends: linux-headers-4.19.0-parrot1-13t-mips64r6, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-mips64r6, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux mips64r6 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -672,22 +672,22 @@ Architecture: mips64r6 mipsr6
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-mips64r6-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-mips64r6-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux mips64r6 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel mips64r6 configuration.
 
 Package: linux-image-mips64r6el
 Architecture: mips64r6el mipsr6el
-Provides: linux-latest-modules-4.19.0-parrot1-13t-mips64r6el
-Depends: linux-image-4.19.0-parrot1-13t-mips64r6el, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-mips64r6el
+Depends: linux-image-4.19.0-parrot1-20t-mips64r6el, ${misc:Depends}
 Description: Linux for MIPS R6 (64 bit, little endian) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS R6 (64 bit, little endian).
 
 Package: linux-headers-mips64r6el
 Architecture: mips64r6el mipsr6el
-Depends: linux-headers-4.19.0-parrot1-13t-mips64r6el, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-mips64r6el, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux mips64r6el configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -698,22 +698,22 @@ Architecture: mips64r6el mipsr6el
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-mips64r6el-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-mips64r6el-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux mips64r6el configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel mips64r6el configuration.
 
 Package: linux-image-mips32r6
 Architecture: mipsr6
-Provides: linux-latest-modules-4.19.0-parrot1-13t-mips32r6
-Depends: linux-image-4.19.0-parrot1-13t-mips32r6, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-mips32r6
+Depends: linux-image-4.19.0-parrot1-20t-mips32r6, ${misc:Depends}
 Description: Linux for MIPS R6 (32 bit, big endian) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS R6 (32 bit, big endian).
 
 Package: linux-headers-mips32r6
 Architecture: mipsr6
-Depends: linux-headers-4.19.0-parrot1-13t-mips32r6, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-mips32r6, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux mips32r6 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -724,22 +724,22 @@ Architecture: mipsr6
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-mips32r6-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-mips32r6-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux mips32r6 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel mips32r6 configuration.
 
 Package: linux-image-mips32r6el
 Architecture: mipsr6el
-Provides: linux-latest-modules-4.19.0-parrot1-13t-mips32r6el
-Depends: linux-image-4.19.0-parrot1-13t-mips32r6el, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-mips32r6el
+Depends: linux-image-4.19.0-parrot1-20t-mips32r6el, ${misc:Depends}
 Description: Linux for MIPS R6 (32 bit, little endian) (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  MIPS R6 (32 bit, little endian).
 
 Package: linux-headers-mips32r6el
 Architecture: mipsr6el
-Depends: linux-headers-4.19.0-parrot1-13t-mips32r6el, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-mips32r6el, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux mips32r6el configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -750,22 +750,22 @@ Architecture: mipsr6el
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-mips32r6el-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-mips32r6el-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux mips32r6el configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel mips32r6el configuration.
 
 Package: linux-image-powerpc
 Architecture: powerpc
-Provides: linux-latest-modules-4.19.0-parrot1-13t-powerpc
-Depends: linux-image-4.19.0-parrot1-13t-powerpc, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-powerpc
+Depends: linux-image-4.19.0-parrot1-20t-powerpc, ${misc:Depends}
 Description: Linux for uniprocessor 32-bit PowerPC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  uniprocessor 32-bit PowerPC.
 
 Package: linux-headers-powerpc
 Architecture: powerpc
-Depends: linux-headers-4.19.0-parrot1-13t-powerpc, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-powerpc, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux powerpc configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -776,22 +776,22 @@ Architecture: powerpc
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-powerpc-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-powerpc-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux powerpc configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel powerpc configuration.
 
 Package: linux-image-powerpc-smp
 Architecture: powerpc
-Provides: linux-latest-modules-4.19.0-parrot1-13t-powerpc-smp
-Depends: linux-image-4.19.0-parrot1-13t-powerpc-smp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-powerpc-smp
+Depends: linux-image-4.19.0-parrot1-20t-powerpc-smp, ${misc:Depends}
 Description: Linux for multiprocessor 32-bit PowerPC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  multiprocessor 32-bit PowerPC.
 
 Package: linux-headers-powerpc-smp
 Architecture: powerpc
-Depends: linux-headers-4.19.0-parrot1-13t-powerpc-smp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-powerpc-smp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux powerpc-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -802,22 +802,22 @@ Architecture: powerpc
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-powerpc-smp-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-powerpc-smp-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux powerpc-smp configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel powerpc-smp configuration.
 
 Package: linux-image-powerpc64
 Architecture: powerpc ppc64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-powerpc64
-Depends: linux-image-4.19.0-parrot1-13t-powerpc64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-powerpc64
+Depends: linux-image-4.19.0-parrot1-20t-powerpc64, ${misc:Depends}
 Description: Linux for 64-bit PowerPC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  64-bit PowerPC.
 
 Package: linux-headers-powerpc64
 Architecture: powerpc ppc64
-Depends: linux-headers-4.19.0-parrot1-13t-powerpc64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-powerpc64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux powerpc64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -828,22 +828,22 @@ Architecture: powerpc ppc64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-powerpc64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-powerpc64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux powerpc64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel powerpc64 configuration.
 
 Package: linux-image-powerpcspe
 Architecture: powerpcspe
-Provides: linux-latest-modules-4.19.0-parrot1-13t-powerpcspe
-Depends: linux-image-4.19.0-parrot1-13t-powerpcspe, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-powerpcspe
+Depends: linux-image-4.19.0-parrot1-20t-powerpcspe, ${misc:Depends}
 Description: Linux for 32-bit PowerPC with SPE (instead of AltiVec) with SMP support (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  32-bit PowerPC with SPE (instead of AltiVec) with SMP support.
 
 Package: linux-headers-powerpcspe
 Architecture: powerpcspe
-Depends: linux-headers-4.19.0-parrot1-13t-powerpcspe, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-powerpcspe, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux powerpcspe configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -854,22 +854,22 @@ Architecture: powerpcspe
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-powerpcspe-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-powerpcspe-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux powerpcspe configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel powerpcspe configuration.
 
 Package: linux-image-powerpc64le
 Architecture: ppc64el
-Provides: linux-latest-modules-4.19.0-parrot1-13t-powerpc64le
-Depends: linux-image-4.19.0-parrot1-13t-powerpc64le, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-powerpc64le
+Depends: linux-image-4.19.0-parrot1-20t-powerpc64le, ${misc:Depends}
 Description: Linux for Little-endian 64-bit PowerPC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Little-endian 64-bit PowerPC.
 
 Package: linux-headers-powerpc64le
 Architecture: ppc64el
-Depends: linux-headers-4.19.0-parrot1-13t-powerpc64le, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-powerpc64le, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux powerpc64le configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -880,22 +880,22 @@ Architecture: ppc64el
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-powerpc64le-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-powerpc64le-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux powerpc64le configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel powerpc64le configuration.
 
 Package: linux-image-riscv64
 Architecture: riscv64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-riscv64
-Depends: linux-image-4.19.0-parrot1-13t-riscv64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-riscv64
+Depends: linux-image-4.19.0-parrot1-20t-riscv64, ${misc:Depends}
 Description: Linux for 64-bit RISC-V platforms (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  64-bit RISC-V platforms.
 
 Package: linux-headers-riscv64
 Architecture: riscv64
-Depends: linux-headers-4.19.0-parrot1-13t-riscv64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-riscv64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux riscv64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -906,22 +906,22 @@ Architecture: riscv64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-riscv64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-riscv64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux riscv64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel riscv64 configuration.
 
 Package: linux-image-s390x
 Architecture: s390x
-Provides: linux-latest-modules-4.19.0-parrot1-13t-s390x
-Depends: linux-image-4.19.0-parrot1-13t-s390x, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-s390x
+Depends: linux-image-4.19.0-parrot1-20t-s390x, ${misc:Depends}
 Description: Linux for IBM zSeries (meta-package)
  This package depends on the latest Linux kernel and modules for use on IBM
  zSeries.
 
 Package: linux-headers-s390x
 Architecture: s390x
-Depends: linux-headers-4.19.0-parrot1-13t-s390x, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-s390x, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux s390x configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -932,22 +932,22 @@ Architecture: s390x
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-s390x-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-s390x-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux s390x configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel s390x configuration.
 
 Package: linux-image-sh7751r
 Architecture: sh4
-Provides: linux-latest-modules-4.19.0-parrot1-13t-sh7751r
-Depends: linux-image-4.19.0-parrot1-13t-sh7751r, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-sh7751r
+Depends: linux-image-4.19.0-parrot1-20t-sh7751r, ${misc:Depends}
 Description: Linux for sh7751r (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Renesas SH7751R R2D plus board.
 
 Package: linux-headers-sh7751r
 Architecture: sh4
-Depends: linux-headers-4.19.0-parrot1-13t-sh7751r, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-sh7751r, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux sh7751r configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -958,22 +958,22 @@ Architecture: sh4
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-sh7751r-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-sh7751r-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux sh7751r configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel sh7751r configuration.
 
 Package: linux-image-sh7785lcr
 Architecture: sh4
-Provides: linux-latest-modules-4.19.0-parrot1-13t-sh7785lcr
-Depends: linux-image-4.19.0-parrot1-13t-sh7785lcr, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-sh7785lcr
+Depends: linux-image-4.19.0-parrot1-20t-sh7785lcr, ${misc:Depends}
 Description: Linux for sh7785lcr (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  Renesas SH7785 reference board.
 
 Package: linux-headers-sh7785lcr
 Architecture: sh4
-Depends: linux-headers-4.19.0-parrot1-13t-sh7785lcr, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-sh7785lcr, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux sh7785lcr configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -984,22 +984,22 @@ Architecture: sh4
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-sh7785lcr-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-sh7785lcr-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux sh7785lcr configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel sh7785lcr configuration.
 
 Package: linux-image-sparc64
 Architecture: sparc64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-sparc64
-Depends: linux-image-4.19.0-parrot1-13t-sparc64, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-sparc64
+Depends: linux-image-4.19.0-parrot1-20t-sparc64, ${misc:Depends}
 Description: Linux for uniprocessor 64-bit UltraSPARC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  uniprocessor 64-bit UltraSPARC.
 
 Package: linux-headers-sparc64
 Architecture: sparc64
-Depends: linux-headers-4.19.0-parrot1-13t-sparc64, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-sparc64, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux sparc64 configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -1010,22 +1010,22 @@ Architecture: sparc64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-sparc64-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-sparc64-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux sparc64 configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel sparc64 configuration.
 
 Package: linux-image-sparc64-smp
 Architecture: sparc64
-Provides: linux-latest-modules-4.19.0-parrot1-13t-sparc64-smp
-Depends: linux-image-4.19.0-parrot1-13t-sparc64-smp, ${misc:Depends}
+Provides: linux-latest-modules-4.19.0-parrot1-20t-sparc64-smp
+Depends: linux-image-4.19.0-parrot1-20t-sparc64-smp, ${misc:Depends}
 Description: Linux for multiprocessor 64-bit UltraSPARC (meta-package)
  This package depends on the latest Linux kernel and modules for use on
  multiprocessor 64-bit UltraSPARC.
 
 Package: linux-headers-sparc64-smp
 Architecture: sparc64
-Depends: linux-headers-4.19.0-parrot1-13t-sparc64-smp, ${misc:Depends}
+Depends: linux-headers-4.19.0-parrot1-20t-sparc64-smp, ${misc:Depends}
 Recommends: libelf-dev
 Description: Header files for Linux sparc64-smp configuration (meta-package)
  This package depends on the architecture-specific header files for the
@@ -1036,7 +1036,7 @@ Architecture: sparc64
 Section: debug
 Priority: extra
 Provides: linux-latest-image-dbg
-Depends: linux-image-4.19.0-parrot1-13t-sparc64-smp-dbgsym, ${misc:Depends}
+Depends: linux-image-4.19.0-parrot1-20t-sparc64-smp-dbgsym, ${misc:Depends}
 Description: Debug symbols for Linux sparc64-smp configuration (meta-package)
  This package depends on the detached debugging symbols for the latest
  Linux kernel sparc64-smp configuration.
