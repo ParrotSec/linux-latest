@@ -34,9 +34,14 @@ install-dummy:
 	$(MAKE) -f debian/rules.real install-base
 
 install-doc: PACKAGE_NAME = linux-doc
+install-doc: PACKAGE_DIR = debian/$(PACKAGE_NAME)
 install-doc: DH_OPTIONS = -p$(PACKAGE_NAME)
 install-doc:
 	dh_prep
+	mkdir -p $(PACKAGE_DIR)/usr/share/doc/$(PACKAGE_NAME)
+	for file in CREDITS.gz Documentation html MAINTAINERS.gz; do \
+		ln -sf ../linux-doc-$(VERSION)/$$file $(PACKAGE_DIR)/usr/share/doc/$(PACKAGE_NAME)/ || exit; \
+	done
 	$(MAKE) -f debian/rules.real install-base
 
 install-source: PACKAGE_NAME = linux-source
@@ -56,5 +61,5 @@ install-flavour:
 	dh_testroot
 	$(MAKE) -f debian/rules.real install-base DH_OPTIONS='-plinux-image$(LOCALVERSION) -plinux-headers$(LOCALVERSION)'
 ifeq ($(DEBUG),True)
-	$(MAKE) -f debian/rules.real install-base DH_OPTIONS='-plinux-image$(LOCALVERSION)-dbgsym' GENCONTROL_ARGS='$(GENCONTROL_ARGS) -DAuto-Built-Package=debug-symbols'
+	$(MAKE) -f debian/rules.real install-base DH_OPTIONS='-plinux-image$(LOCALVERSION)-dbg'
 endif

@@ -1,2 +1,0 @@
-linux-image-powerpc-smp-dbgsym: wrong-section-according-to-package-name linux-image-powerpc-smp-dbgsym => debug
-linux-image-powerpc-smp-dbgsym: debug-package-should-be-priority-extra linux-image-powerpc-smp-dbgsym

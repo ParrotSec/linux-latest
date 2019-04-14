@@ -1,2 +1,0 @@
-linux-image-parisc-smp-dbgsym: wrong-section-according-to-package-name linux-image-parisc-smp-dbgsym => debug
-linux-image-parisc-smp-dbgsym: debug-package-should-be-priority-extra linux-image-parisc-smp-dbgsym
