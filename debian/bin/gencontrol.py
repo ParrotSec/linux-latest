@@ -20,6 +20,9 @@ class Gencontrol(Base):
         self.vars = {
             'upstreamversion': self.version.linux_upstream,
             'version': self.version.linux_version,
+            'source_package': self.changelog[0].source,
+            'source_suffix': re.sub(r'^linux-latest', r'',
+                                    self.changelog[0].source),
             'source_upstream': self.version.upstream,
             'abiname': self.abiname,
         }
@@ -29,6 +32,7 @@ class Gencontrol(Base):
 
     def do_main_setup(self, vars, makeflags, extra):
         makeflags['GENCONTROL_ARGS'] = '-v%s' % self.package_version
+        makeflags['VERSION'] = self.version.linux_version
 
         # A line will be appended to this for each image-dbg package.
         # Start with an empty file.
@@ -43,14 +47,17 @@ class Gencontrol(Base):
              'linux-headers-%s-all' % self.abiname]
         )
 
-        latest_source = self.templates["control.source.latest"]
-        packages.extend(self.process_packages(latest_source, vars))
+        # Only build these metapackages if their names won't exactly match
+        # the packages they depend on
+        if vars['source_suffix'] != '-' + vars['upstreamversion']:
+            latest_source = self.templates["control.source.latest"]
+            packages.extend(self.process_packages(latest_source, vars))
 
-        latest_doc = self.templates["control.doc.latest"]
-        packages.extend(self.process_packages(latest_doc, vars))
+            latest_doc = self.templates["control.doc.latest"]
+            packages.extend(self.process_packages(latest_doc, vars))
 
-        latest_tools = self.templates["control.tools.latest"]
-        packages.extend(self.process_packages(latest_tools, vars))
+            latest_tools = self.templates["control.tools.latest"]
+            packages.extend(self.process_packages(latest_tools, vars))
 
     def do_flavour_packages(self, packages, makefile, arch, featureset, flavour, vars, makeflags, extra):
         if self.version.linux_modifier is None:
@@ -81,7 +88,7 @@ class Gencontrol(Base):
             makeflags['DEBUG'] = True
             templates.extend(self.templates["control.image-dbg.latest"])
             substitute_file('lintian-overrides.image-dbg',
-                            'debian/linux-image-%s-dbgsym.lintian-overrides' %
+                            'debian/linux-image-%s-dbg.lintian-overrides' %
                             vars['flavour'])
             substitute_file('lintian-overrides.source',
                             'debian/source.lintian-overrides',
@@ -98,9 +105,6 @@ class Gencontrol(Base):
             for part in parts:
                 desc.append(config_description['part-long-' + part])
                 desc.append_short(config_description.get('part-short-' + part, ''))
-
-            if self.config.merge('xen', arch, featureset, flavour):
-                templates.extend(self.templates["control.xen-linux-system.latest"])
 
         packages_flavour = []
 

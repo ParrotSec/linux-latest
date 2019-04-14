@@ -1,4 +1,4 @@
-Package: linux-perf
+Package: linux-perf@source_suffix@
 Architecture: all
 Depends: linux-perf-@upstreamversion@, ${misc:Depends}
 Description: Performance analysis tools for Linux (meta-package)

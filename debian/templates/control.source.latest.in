@@ -1,4 +1,4 @@
-Package: linux-source
+Package: linux-source@source_suffix@
 Architecture: all
 Depends: linux-source-@upstreamversion@, ${misc:Depends}
 Description: Linux kernel source (meta-package)

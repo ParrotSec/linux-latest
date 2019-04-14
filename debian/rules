@@ -8,7 +8,7 @@ GENCONTROL = debian/bin/gencontrol.py
 DEB_HOST_ARCH  := $(shell dpkg-architecture -qDEB_HOST_ARCH)
 DEB_BUILD_ARCH := $(shell dpkg-architecture -qDEB_BUILD_ARCH)
 
-__BINNMU := $(shell dpkg-parsechangelog | sed -rne 's,^Version: .*\+b([0-9]+)$$,\1,p')
+__BINNMU := $(shell dpkg-parsechangelog -SVersion | sed -rne 's,.*\+b([0-9]+)$$,\1,p')
 
 build: build-arch build-indep
 build-arch:

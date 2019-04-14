@@ -1,3 +1,10 @@
+linux-latest (105+parrot2) testing; urgency=medium
+
+  * Rebuild package on faramir build node.
+  * Add -unsigned alternative for kernel image packages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Apr 2019 06:48:18 +0200
+
 linux-latest (105+parrot1) testing; urgency=medium
 
   * Update to Linux 4.19.0-parrot1.28t (4.19.28).

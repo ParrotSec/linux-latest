@@ -1,2 +1,0 @@
-linux-image-rt-armmp-dbgsym: wrong-section-according-to-package-name linux-image-rt-armmp-dbgsym => debug
-linux-image-rt-armmp-dbgsym: debug-package-should-be-priority-extra linux-image-rt-armmp-dbgsym
