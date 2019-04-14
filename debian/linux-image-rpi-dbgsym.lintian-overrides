@@ -1,0 +1,2 @@
+linux-image-rpi-dbgsym: wrong-section-according-to-package-name linux-image-rpi-dbgsym => debug
+linux-image-rpi-dbgsym: debug-package-should-be-priority-extra linux-image-rpi-dbgsym
