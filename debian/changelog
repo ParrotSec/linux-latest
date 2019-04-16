@@ -1,3 +1,9 @@
+linux-latest (106+parrot1) testing; urgency=medium
+
+  * Update to Linux 4.19.0-parrot3.28t (4.19.28).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 16 Apr 2019 19:22:33 +0200
+
 linux-latest (105+parrot2) testing; urgency=medium
 
   * Rebuild package on faramir build node.
