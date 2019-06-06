@@ -1,3 +1,10 @@
+linux-latest (109+parrot1) testing; urgency=medium
+
+  * Switch to parrot stable kernel.
+  * Bump Linux version 4.19.37.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 15:29:47 +0200
+
 linux-latest (108+parrot1) testing; urgency=medium
 
   * Update to Linux 5.1.0-parrot1-3t (5.1.3).
