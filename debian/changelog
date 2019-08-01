@@ -1,3 +1,9 @@
+linux-latest (110+parrot3) rolling; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2019 03:32:33 +0200
+
 linux-latest (110+parrot2) rolling; urgency=medium
 
   * Bump linux version 4.19.37-6.
