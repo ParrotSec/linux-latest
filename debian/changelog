@@ -1,3 +1,9 @@
+linux-latest (110+parrot2) rolling; urgency=medium
+
+  * Bump linux version 4.19.37-6.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2019 02:42:13 +0200
+
 linux-latest (110+parrot1) testing; urgency=medium
 
   * Bump Linux version 4.19.37-5.
