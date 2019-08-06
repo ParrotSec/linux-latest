@@ -1,3 +1,9 @@
+linux-latest (110+parrot5) rolling; urgency=medium
+
+  * Update linux kernel packages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 06 Aug 2019 14:39:32 +0200
+
 linux-latest (110+parrot4) rolling; urgency=medium
 
   * Bump new 4.19.37 linux revision.
